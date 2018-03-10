@@ -21,25 +21,43 @@ namespace test
         public NowyProfil()
         {
             InitializeComponent();
+                          
         }
+
 
         private void buttonStworzKonto_Click(object sender, RoutedEventArgs e)
         {
-            if (TextNLogin.Text != "" && NewPassword.Password == NewPassword2.Password)
+    
+            
+
+            // pobrać listę z profilami
+            // sprawdzić, czy wprowadzony sie powtarza
+
+            //bool jest = false;
+
+            /*string[] prof = App.profile;
+
+            foreach (string p in prof)
+            {
+                if ( prof (p) == TextNLogin.Text)
+                {
+
+                }
+            }*/
+
+            if (TextNLogin.Text != "" && NewPassword.Password == NewPassword2.Password && NewPassword.Password != "")
             {
                 (new Main()).Show();
 
                 Close();
             }
-            else
-            {
-                if(TextNLogin.Text == "" && NewPassword != null && NewPassword.Password != NewPassword2.Password)
-                    KomNP.Content = "Podana nazwa użytkownika jest już zajęta. Hasła są różne";
-                if (TextNLogin.Text != null && NewPassword.Password == NewPassword2.Password)
-                    KomNP.Content = "Podana nazwa użytkownika jest już zajęta.";
-                else
-                    KomNP.Content = "Hasła są różne";
-            }
+            else if(TextNLogin.Text == "")
+                KomNP.Content = "Podaj nazwę użytkownika";
+            else if (NewPassword.Password == NewPassword2.Password && NewPassword.Password == "")
+                KomNP.Content = "Wprowadź hasło";
+            else if (NewPassword.Password != NewPassword2.Password)
+                KomNP.Content = "Hasła są różne";
+
         }
     }
 }
