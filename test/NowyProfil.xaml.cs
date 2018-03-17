@@ -27,30 +27,34 @@ namespace test
 
         private void buttonStworzKonto_Click(object sender, RoutedEventArgs e)
         {
-    
+
+
             
 
-            // pobrać listę z profilami
-            // sprawdzić, czy wprowadzony sie powtarza
+            bool zajety = false;
 
-            //bool jest = false;
+            Profile profile = new Profile();
 
-            /*string[] prof = App.profile;
+         
 
-            foreach (string p in prof)
+            for(int i =0; i<profile.User.Length;i++)
             {
-                if ( prof (p) == TextNLogin.Text)
+                if ( profile.User [i] == TextNLogin.Text)
                 {
-
+                    zajety = true;
                 }
-            }*/
+            }
 
-            if (TextNLogin.Text != "" && NewPassword.Password == NewPassword2.Password && NewPassword.Password != "")
+            if (TextNLogin.Text != "" && NewPassword.Password == NewPassword2.Password && NewPassword.Password != "" && zajety == false)
             {
+                // tworzenie nowego profilu ---------------------    TO DO    ------------
+
                 (new Main()).Show();
 
                 Close();
             }
+            else if(zajety== true)
+                KomNP.Content = "Nazwa uzytkownika jest już zajęta";
             else if(TextNLogin.Text == "")
                 KomNP.Content = "Podaj nazwę użytkownika";
             else if (NewPassword.Password == NewPassword2.Password && NewPassword.Password == "")

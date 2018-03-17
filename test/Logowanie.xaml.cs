@@ -26,7 +26,17 @@ namespace test
 
         private void buttonZaloguj_Click(object sender, RoutedEventArgs e)
         {
-            if (TextLogin.Text == "admin" && Password.Password == "admin")
+            Profile profile = new Profile();
+            bool correct = false;
+            
+            for (int i = 0; i < profile.User.Length; i++)
+            {
+                if (profile.User[i] == TextLogin.Text && profile.Password[i] == Password.Password)
+                {
+                    correct = true;
+                }
+            }
+            if (correct == true)
             {
                 (new Main()).Show();
 
