@@ -22,5 +22,33 @@ namespace test
         {
             InitializeComponent();
         }
+
+        public void polZBaza(bool czy)
+        {
+            if (czy == true)
+                TextPolBaza.Text = "tak";
+            else
+                TextPolBaza.Text = "brak";
+        }
+
+        private void buttonPolBaza_Click(object sender, RoutedEventArgs e)
+        {
+            (new Baza()).Show();
+        }
+
+        private void buttonGenerujTest_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonPobierzTesty_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonSprawdz_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

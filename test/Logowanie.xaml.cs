@@ -56,7 +56,9 @@ namespace test
 
         private void buttonPubliczny_Click(object sender, RoutedEventArgs e)
         {
-            (new Main()).Show();
+            //(new Main()).Show();
+            Main nowy = new Main();
+            nowy.Show();
 
             Close();
         }
