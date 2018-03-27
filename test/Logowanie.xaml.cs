@@ -57,15 +57,17 @@ namespace test
         private void buttonPubliczny_Click(object sender, RoutedEventArgs e)
         {
             //(new Main()).Show();
-            Main nowy = new Main();
-            nowy.Show();
+           // Main nowy = new Main();
+            //nowy.Show();
+            Main2 nowy2 = new Main2();
+            nowy2.Show();
 
             Application.Current.Properties["Login"] = "public";
             Application.Current.Properties["ConnectedStatus"] = "brak";
             
 
             //nowy.TextNazwaTestu.Text = Application.Current.Properties["Login"].ToString();
-           nowy.TextPolBaza.Text = Application.Current.Properties["ConnectedStatus"].ToString();
+           //nowy.TextPolBaza.Text = Application.Current.Properties["ConnectedStatus"].ToString();
 
             Close();
         }

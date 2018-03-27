@@ -18,3 +18,5 @@ D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\NowyProfil.baml
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Baza.g.cs
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Baza.baml
+D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Main2.g.cs
+D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Main2.baml
