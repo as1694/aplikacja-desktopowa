@@ -60,6 +60,13 @@ namespace test
             Main nowy = new Main();
             nowy.Show();
 
+            Application.Current.Properties["Login"] = "public";
+            Application.Current.Properties["ConnectedStatus"] = "brak";
+            
+
+            //nowy.TextNazwaTestu.Text = Application.Current.Properties["Login"].ToString();
+           nowy.TextPolBaza.Text = Application.Current.Properties["ConnectedStatus"].ToString();
+
             Close();
         }
 

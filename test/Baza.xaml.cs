@@ -29,8 +29,13 @@ namespace test
             /*
               łączenie z bazą
             */
+            czyPolaczono = true;
 
-           
+           if (czyPolaczono==true)
+                Application.Current.Properties["ConnectedStatus"] = "tak";
+           else
+                Application.Current.Properties["ConnectedStatus"] = "brak";
+
             Close();
         }
     }

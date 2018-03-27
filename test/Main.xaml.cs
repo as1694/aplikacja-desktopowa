@@ -21,8 +21,10 @@ namespace test
         public Main()
         {
             InitializeComponent();
+            //TextNazwaTestu.Text = Application.Current.Properties["Login"].ToString();
         }
 
+   
         public void polZBaza(bool czy)
         {
             if (czy == true)
@@ -38,7 +40,7 @@ namespace test
 
         private void buttonGenerujTest_Click(object sender, RoutedEventArgs e)
         {
-
+           //TextNazwaTestu.Text = Application.Current.Properties["Login"].ToString();
         }
 
         private void buttonPobierzTesty_Click(object sender, RoutedEventArgs e)

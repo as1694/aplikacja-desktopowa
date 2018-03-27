@@ -11,7 +11,17 @@ namespace test
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
-    {        
+    {
+        
+public void App_Startup(object sender, StartupEventArgs e)
 
+        {
+
+            this.Properties["Login"] = "mc";
+
+            this.Properties["Password"] = "pwd";
+
+            this.Properties["ConnectedStatus"] = "brak";
+        }
     }
 }
