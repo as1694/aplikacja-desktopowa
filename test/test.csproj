@@ -70,6 +70,7 @@
     <Compile Include="Baza.xaml.cs">
       <DependentUpon>Baza.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BoolVisibilityConverter.cs" />
     <Compile Include="Logowanie.xaml.cs">
       <DependentUpon>Logowanie.xaml</DependentUpon>
       <SubType>Code</SubType>

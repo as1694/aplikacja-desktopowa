@@ -64,6 +64,7 @@ namespace test
 
             Application.Current.Properties["Login"] = "public";
             Application.Current.Properties["ConnectedStatus"] = "brak";
+            nowy2.zalogowany.Text = Application.Current.Properties["Login"].ToString();
             
 
             //nowy.TextNazwaTestu.Text = Application.Current.Properties["Login"].ToString();

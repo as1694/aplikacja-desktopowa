@@ -27,5 +27,10 @@ namespace test
         {
            // PopBaza.IsOpen = true;
         }
+
+        private void buttonGenerujTest_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
