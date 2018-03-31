@@ -23,18 +23,16 @@
 				<WrapPanel>
 					<Label Content="Połączenie z bazą danych:" Margin="10,10,-3,10" Padding="5"/>
 					<Label x:Name="TextPolBaza" Content="brak połączenia" Margin="0,10,10,10" Padding="5"/>
-					<ToggleButton x:Name="buttonPolBaza" IsChecked="{Binding ElementName=PopBaza, Path=IsOpen}" Content="konfiguruj połączenie" Margin="10" Padding="5" Click="buttonPolBaza_Click"/>
-					<Popup x:Name="PopBaza" AllowsTransparency="True" PlacementTarget="{Binding ElementName=buttonPolBaza}" Placement="Left">
-						<WrapPanel>
-							<Label Content="login:" Margin="10,0,0,10" Padding="5"/>
-							<TextBox x:Name="TextBLogin" MinWidth="100" Margin="10,0,10,10" Padding="5"/>
-							<Label Content="hasło:" Margin="10,0,0,10" Padding="5"/>
-							<PasswordBox x:Name="BPassword" MinWidth="100" Margin="10,0,10,10" Padding="5"/>
-							<Label Content="źródło:" Margin="10,0,0,10" Padding="5"/>
-							<TextBox x:Name="BSource" MinWidth="100" Margin="10,0,10,10" Padding="5"/>
-							<Button x:Name="buttonBPolacz" Content="połącz z bazą" Margin="10,0,10,10" Padding="5"/>
+					<ToggleButton x:Name="buttonPolBaza"  Content="konfiguruj połączenie" Margin="10" Padding="5" Click="buttonPolBaza_Click"/>
+						<WrapPanel Visibility="{Binding ElementName=buttonPolBaza, Path=IsChecked, Converter={StaticResource BoolVisibilityConverter}}">
+							<Label Content="login:" Margin="10,10,0,10" Padding="5"/>
+							<TextBox x:Name="TextBLogin" MinWidth="100" Margin="10,10,10,10" Padding="5"/>
+							<Label Content="hasło:" Margin="10,10,0,10" Padding="5"/>
+							<PasswordBox x:Name="BPassword" MinWidth="100" Margin="10,10,10,10" Padding="5"/>
+							<Label Content="źródło:" Margin="10,10,0,10" Padding="5"/>
+							<TextBox x:Name="BSource" MinWidth="100" Margin="10,10,10,10" Padding="5"/>
+							<Button x:Name="buttonBPolacz" Content="połącz z bazą" Margin="10,10,10,10" Padding="5"/>
 						</WrapPanel>
-					</Popup>
 				</WrapPanel>
 			</StackPanel>
 		</Grid>

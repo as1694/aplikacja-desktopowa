@@ -1,6 +1,5 @@
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\bin\Debug\test.exe
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\bin\Debug\test.pdb
-D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Baza.g.cs
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Logowanie.g.cs
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Main.g.cs
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Main2.g.cs
@@ -8,7 +7,6 @@ D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\App.g.cs
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\test_MarkupCompile.cache
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\test_MarkupCompile.lref
-D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Baza.baml
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Logowanie.baml
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Main.baml
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\Main2.baml

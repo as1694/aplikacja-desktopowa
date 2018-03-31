@@ -35,7 +35,7 @@ namespace test
 
         private void buttonPolBaza_Click(object sender, RoutedEventArgs e)
         {
-            (new Baza()).Show();
+            //(new Baza()).Show();
         }
 
         private void buttonGenerujTest_Click(object sender, RoutedEventArgs e)
