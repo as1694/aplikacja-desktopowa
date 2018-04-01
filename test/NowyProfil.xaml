@@ -17,6 +17,9 @@
 			<RowDefinition Height="10*" MinHeight="160"></RowDefinition>
 			<RowDefinition Height="0*"></RowDefinition>
 		</Grid.RowDefinitions>
+		<StackPanel Grid.Column="1">
+			<Label Content="TestGenerator" HorizontalAlignment="Center" VerticalAlignment="Top" Height="72" FontSize="48" HorizontalContentAlignment="Center" FontFamily="Maiandra GD" Margin="10,0,10,10"/>
+		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="1">
 			<WrapPanel>
 				<Label Content="login:" Padding="5" Margin="10" Width="100" FontFamily="Maiandra GD" HorizontalContentAlignment="Right"/>
@@ -32,9 +35,6 @@
 			</WrapPanel>
 			<Label x:Name="KomNP" Content="" Padding="1" Margin="10,0,10,0" HorizontalAlignment="Center" FontSize="8" FontFamily="Maiandra GD" Foreground="#FFF90000"/>
 			<Button x:Name="buttonStworzKonto" Content="stwórz konto" Padding="5" HorizontalAlignment="Right" Margin="0" FontFamily="Maiandra GD" Background="White" Click="buttonStworzKonto_Click" BorderBrush="Black"/>
-		</StackPanel>
-		<StackPanel Grid.Column="1">
-			<Label Content="TestGenerator" HorizontalAlignment="Center" VerticalAlignment="Top" Height="72" FontSize="48" HorizontalContentAlignment="Center" FontFamily="Maiandra GD" Margin="10,0,10,10"/>
 		</StackPanel>
 	</Grid>
 </Window>

@@ -49,7 +49,7 @@ namespace test
             {
                 // tworzenie nowego profilu ---------------------    TO DO    ------------
 
-                (new Main()).Show();
+                (new Main2()).Show();
 
                 Close();
             }

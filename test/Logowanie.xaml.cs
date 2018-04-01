@@ -38,7 +38,7 @@ namespace test
             }
             if (correct == true)
             {
-                (new Main()).Show();
+                (new Main2()).Show();
 
                 Close();
             }

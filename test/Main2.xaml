@@ -1,11 +1,11 @@
 ﻿<Window x:Class="test.Main2"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:converter="clr-namespace:test"
-        mc:Ignorable="d"
-        Title="TestGenerator" Height="900" Width="1600" WindowState="Maximized" Background="White">
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:converter="clr-namespace:test"
+		mc:Ignorable="d"
+		Title="TestGenerator" Height="900" Width="1600" WindowState="Maximized" Background="White">
 	<Window.Resources>
 		<converter:BoolVisibilityConverter x:Key="BoolVisibilityConverter"/>
 	</Window.Resources>
@@ -31,7 +31,7 @@
 							<PasswordBox x:Name="BPassword" MinWidth="100" Margin="10,10,10,10" Padding="5"/>
 							<Label Content="źródło:" Margin="10,10,0,10" Padding="5"/>
 							<TextBox x:Name="BSource" MinWidth="100" Margin="10,10,10,10" Padding="5"/>
-							<Button x:Name="buttonBPolacz" Content="połącz z bazą" Margin="10,10,10,10" Padding="5"/>
+							<Button x:Name="buttonBPolacz" Content="połącz z bazą" Width="100" Margin="10,10,10,10" Padding="5"/>
 						</WrapPanel>
 				</WrapPanel>
 			</StackPanel>
@@ -78,13 +78,22 @@
 								<Slider Value="{Binding ElementName=TextLiczbaGrup, Path=Text}" Padding="5" Margin="0,15,0,10" Width="150" IsSnapToTickEnabled="True" Minimum="{Binding ElementName=minGrup, Path=Content}" Maximum="{Binding ElementName=maxGrup, Path=Content}"/>
 								<Label x:Name="maxGrup" Content="100" Padding="5" Margin="0,10"/>
 							</WrapPanel>
-							<Button x:Name="buttonGenerujTest" Content="Generuj test" Click="buttonGenerujTest_Click" HorizontalAlignment="Right" Margin="10,10,100,10" Padding="5"/>
+							<Button x:Name="buttonGenerujTest" Content="Generuj test" Click="buttonGenerujTest_Click" HorizontalAlignment="Right" Margin="10,10,100,10" Padding="5" Width="100"/>
 						</StackPanel>
 					</GroupBox>
 					<ToggleButton x:Name="buttonSprawdzanie" Content="Sprawdzanie testu" Padding="5" Margin="10,10,10,10" />
 					<GroupBox Visibility="{Binding ElementName=buttonSprawdzanie, Path=IsChecked, Converter={StaticResource BoolVisibilityConverter}}" Padding="5" Margin="10">
 						<StackPanel>
-							<Label Content="dsdsds"/>
+							<WrapPanel>
+								<Label Content="Nazwa testu:" Margin="10" Padding="5" Width="200" HorizontalContentAlignment="Right"/>
+								<TextBox x:Name="TextNazwaTestuPob" MinWidth="100" Margin="10" Padding="5"/>
+								<Button x:Name="buttonPobierzTesty" Content="Pobierz" Width="100" Margin="10" Padding="5"/>
+							</WrapPanel>
+							<WrapPanel>
+								<Label Content="Ilość testów:" Margin="10" Padding="5" Width="200" HorizontalContentAlignment="Right"/>
+								<TextBlock x:Name="TextIloscPobrTestow" MinWidth="100" Margin="10" Padding="5"/>
+								<Button x:Name="buttonSprawdz" Content="Sprawdź" Width="100" Margin="10" Padding="5"/>
+							</WrapPanel>
 						</StackPanel>
 					</GroupBox>
 				</StackPanel>
