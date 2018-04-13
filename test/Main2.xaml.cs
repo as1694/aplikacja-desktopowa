@@ -32,5 +32,22 @@ namespace test
         {
 
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Wyloguj_Click(object sender, RoutedEventArgs e)
+        {
+            (new Logowanie()).Show();
+            Close();
+
+        }
     }
 }

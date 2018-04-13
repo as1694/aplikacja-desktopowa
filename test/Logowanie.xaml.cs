@@ -22,6 +22,7 @@ namespace test
         public Logowanie()
         {
             InitializeComponent();
+            TextLogin.Focus();
         }
 
         private void buttonZaloguj_Click(object sender, RoutedEventArgs e)
@@ -38,8 +39,11 @@ namespace test
             }
             if (correct == true)
             {
-                (new Main2()).Show();
-
+                Main2 nowy2 = new Main2();
+                nowy2.Show();
+                Application.Current.Properties["Login"] = TextLogin.Text;
+                Application.Current.Properties["ConnectedStatus"] = "brak";
+                nowy2.zalogowany.Text = Application.Current.Properties["Login"].ToString();
                 Close();
             }
             else
@@ -62,7 +66,7 @@ namespace test
             Main2 nowy2 = new Main2();
             nowy2.Show();
 
-            Application.Current.Properties["Login"] = "public";
+            Application.Current.Properties["Login"] = "profil publiczny";
             Application.Current.Properties["ConnectedStatus"] = "brak";
             nowy2.zalogowany.Text = Application.Current.Properties["Login"].ToString();
             
