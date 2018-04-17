@@ -8,6 +8,28 @@
 		Title="TestGenerator" Height="900" Width="1600" WindowState="Maximized" Background="White">
 	<Window.Resources>
 		<converter:BoolVisibilityConverter x:Key="BoolVisibilityConverter"/>
+		<Style TargetType="Button">
+			<Setter Property="BorderBrush" Value="Black" />
+			<Setter Property="Background" Value="White" />
+			<Setter Property="FontFamily" Value="Maiandra GD" />
+		</Style>
+		<Style TargetType="ToggleButton">
+			<Setter Property="BorderBrush" Value="Black" />
+			<Setter Property="Background" Value="White" />
+			<Setter Property="FontFamily" Value="Maiandra GD" />
+		</Style>
+		<Style TargetType="MenuItem">
+			<Setter Property="FontFamily" Value="Maiandra GD" />
+		</Style>
+		<Style TargetType="Label">
+			<Setter Property="FontFamily" Value="Maiandra GD" />
+		</Style>
+		<Style TargetType="TextBox">
+			<Setter Property="FontFamily" Value="Maiandra GD" />
+		</Style>
+		<Style TargetType="TextBlock">
+			<Setter Property="FontFamily" Value="Maiandra GD" />
+		</Style>
 	</Window.Resources>
 	<Grid>
 		<Grid.RowDefinitions>

@@ -17,3 +17,7 @@ D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\test.pdb
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\obj\Debug\test.csproj.ResolveComReference.cache
+D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\bin\Debug\ExcelDataReader.dll
+D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\studia\2_Informatyka\2_1\Zastosowanie inf w gospodarce\projekt\test\test\bin\Debug\ExcelDataReader.xml
